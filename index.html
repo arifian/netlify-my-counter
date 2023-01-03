@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Counter</title>
+        <title>Counter Form</title>
     </head>
     <body>
-        <h1>Index</h1>
-        <h2>My Counter</h1>
-        <p>current counter is: 1</p>
+        <h1>My Counter</h1>
+        <script>
+         fetch('/.netlify/functions/counter')
+             .then((response) => response.json())
+             .then((data) => {
+                 const counter = document.querySelector('#counter');
+                 counter.textContent = data.count;
+             });
+        </script>
+        <form>
+            <span id="counter">0</span>
+            <br>
+            <button type="button" id="increment">+</button>
+        </form>
+        <script>
+         const incrementButton = document.querySelector('#increment');
+         const counter = document.querySelector('#counter');
+
+         incrementButton.addEventListener('click', () => {
+             fetch('/.netlify/functions/counter', { method: 'POST' })
+                 .then((response) => response.json())
+                 .then((data) => {
+                     counter.textContent = data.count;
+                 });
+         });
+        </script>
     </body>
 </html>
