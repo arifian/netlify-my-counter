@@ -33,7 +33,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     });
     return {
       statusCode: 200,
-      body: JSON.stringify({ count: results[0].count }),
+      body: JSON.stringify({ count: counter }),
     };
   } else {
     return {
