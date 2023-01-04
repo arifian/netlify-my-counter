@@ -1,4 +1,4 @@
-import * as dotenv from 'dotenv';
+// import * as dotenv from 'dotenv';
 import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 import * as mysql from 'mysql2';
 
@@ -13,7 +13,6 @@ connection.query('SELECT count FROM counters WHERE id = 1', function (error, res
   counter = results[0].count;
 });
 
-
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   if (event.httpMethod === 'POST') {
     counter++;
@@ -21,20 +20,21 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     connection.query('UPDATE counters SET count = ? WHERE id = 1', [counter], function (error, results, fields) {
       if (error) throw error;
     });
-          // return the updated count to the client
+    // return the updated count to the client
     return {
-        statusCode: 200,
-        body: JSON.stringify({ count: counter }),
-      };
+      statusCode: 200,
+      body: JSON.stringify({ count: counter }),
+    };
   } else if (event.httpMethod === 'GET') {
     // retrieve the current count from the database
     connection.query('SELECT count FROM counters WHERE id = 1', function (error, results, fields) {
       if (error) throw error;
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ count: results[0].count }),
-      };
+      counter = results[0].count;
     });
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ count: results[0].count }),
+    };
   } else {
     return {
       statusCode: 405,
