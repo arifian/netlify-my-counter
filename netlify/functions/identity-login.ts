@@ -4,11 +4,10 @@ import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 const handler: Handler = async function (event: HandlerEvent, context: HandlerContext) {
     const { identity, user } = context.clientContext;
     console.log('logging');
-    console.log(identity);
-    console.log(user);
-    console.log('clientContext');
-    console.log(context.clientContext);
-    // Do stuff and return a response...
+
+    console.log('context');
+    console.log(context);
+
     return {
         statusCode: 200,
     };
