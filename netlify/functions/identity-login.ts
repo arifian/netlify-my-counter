@@ -5,8 +5,14 @@ const handler: Handler = async function (event: HandlerEvent, context: HandlerCo
     const { identity, user } = context.clientContext;
     console.log('logging');
 
-    console.log('context');
+    console.log('\ncontext\n');
     console.log(context);
+
+    console.log('==============================');
+
+    console.log('\nevent\n');
+    console.log(event);
+
 
     return {
         statusCode: 200,
