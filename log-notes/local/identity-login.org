@@ -1,0 +1,76 @@
+* Request from ::1: GET /.netlify/functions/identity-login
+===============logging-identity-login===============
+
+** context
+
+#+begin_src typescript
+{
+  done: [Function: bound ],
+  fail: [Function: bound ],
+  succeed: [Function: bound ],
+  getRemainingTimeInMillis: [Function: bound ],
+  callbackWaitsForEmptyEventLoop: false,
+  functionName: 'handler',
+  functionVersion: '1.0',
+  invokedFunctionArn: 'arn:aws:lambda:us-east-1:855138034432:function:handler:1.0',
+  memoryLimitInMB: '297',
+  awsRequestId: '867289fe-afff-07b0-19f6-72571b463610',
+  logGroupName: 'Group name',
+  logStreamName: 'Stream name',
+  identity: null,
+  clientContext: {
+    identity: {
+      url: 'https://netlify-dev-locally-emulated-identity.netlify.com/.netlify/identity',
+      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJuZXRsaWZ5IGRldiIsInRlc3REYXRhIjoiTkVUTElGWV9ERVZfTE9DQUxMWV9FTVVMQVRFRF9JREVOVElUWSJ9.2eSDqUOZAOBsx39FHFePjYj12k0LrxldvGnlvDu3GMI'
+    },
+    user: {
+      exp: 1673256917,
+      sub: '9e36f2b3-787e-42c4-9230-9e68eb407521',
+      email: 'arifian.rahardianda@zeniuseducation.com',
+      app_metadata: [Object],
+      user_metadata: [Object]
+    }
+  },
+  _stopped: false
+}
+#+end_src
+
+** event
+
+#+begin_src typescript
+{
+  path: '/.netlify/functions/identity-login',
+  httpMethod: 'GET',
+  queryStringParameters: {},
+  multiValueQueryStringParameters: {},
+  headers: {
+    'x-forwarded-for': '::1',
+    connection: 'close',
+    'accept-encoding': 'gzip, deflate, br',
+    host: 'localhost:8888',
+    'postman-token': '54a4ff9c-e8f1-4122-8064-d144d94d3f39',
+    accept: '*/*',
+    'user-agent': 'PostmanRuntime/7.28.4',
+    authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzMyNTY5MTcsInN1YiI6IjllMzZmMmIzLTc4N2UtNDJjNC05MjMwLTllNjhlYjQwNzUyMSIsImVtYWlsIjoiYXJpZmlhbi5yYWhhcmRpYW5kYUB6ZW5pdXNlZHVjYXRpb24uY29tIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwifSwidXNlcl9tZXRhZGF0YSI6eyJmdWxsX25hbWUiOiJhcmlmaWFuIn19.0p5nER1Xtr1BW-AwKg03uPVvmzqFpOve0lG95JUM7TQ',
+    'client-ip': '::1'
+  },
+  multiValueHeaders: {
+    'x-forwarded-for': [ '::1' ],
+    connection: [ 'close' ],
+    'accept-encoding': [ 'gzip, deflate, br' ],
+    host: [ 'localhost:8888' ],
+    'postman-token': [ '54a4ff9c-e8f1-4122-8064-d144d94d3f39' ],
+    accept: [ '*/*' ],
+    'user-agent': [ 'PostmanRuntime/7.28.4' ],
+    authorization: [
+      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzMyNTY5MTcsInN1YiI6IjllMzZmMmIzLTc4N2UtNDJjNC05MjMwLTllNjhlYjQwNzUyMSIsImVtYWlsIjoiYXJpZmlhbi5yYWhhcmRpYW5kYUB6ZW5pdXNlZHVjYXRpb24uY29tIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwifSwidXNlcl9tZXRhZGF0YSI6eyJmdWxsX25hbWUiOiJhcmlmaWFuIn19.0p5nER1Xtr1BW-AwKg03uPVvmzqFpOve0lG95JUM7TQ'
+    ],
+    'client-ip': [ '::1' ]
+  },
+  body: undefined,
+  isBase64Encoded: true,
+  rawUrl: 'http://localhost:8888/.netlify/functions/identity-login',
+  rawQuery: ''
+}
+#+end_src
+* Response with status 200 in 6 ms.
