@@ -7,7 +7,7 @@ const handler: Handler = async function (event: HandlerEvent, context: HandlerCo
     console.log(identity);
     console.log(user);
     console.log('clientContext');
-    console.log(clientContext);
+    console.log(context.clientContext);
     // Do stuff and return a response...
     return {
         statusCode: 200,
