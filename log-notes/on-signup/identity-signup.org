@@ -1,0 +1,75 @@
+* Jan 9, 01:58:42 PM: 739bbdee INFO   ===============logging-identity-signup===============
+* Jan 9, 01:58:42 PM: 739bbdee INFO context
+** Jan 9, 01:58:42 PM: 739bbdee INFO
+#+begin_src typescript
+{
+  callbackWaitsForEmptyEventLoop: [Getter/Setter],
+  succeed: [Function (anonymous)],
+  fail: [Function (anonymous)],
+  done: [Function (anonymous)],
+  functionVersion: '$LATEST',
+  functionName: 'f21c1f50b925408a7906149070decceeb695bd6fd51aad10e318c646adcfaa1a',
+  memoryLimitInMB: '1024',
+  logGroupName: '/aws/lambda/f21c1f50b925408a7906149070decceeb695bd6fd51aad10e318c646adcfaa1a',
+  logStreamName: '2023/01/09/[$LATEST]76bcf378b0a046e4bc07a213cdd01657',
+  clientContext: {
+    custom: {
+      netlify: 'eyJpZGVudGl0eSI6eyJ1cmwiOiJodHRwczovL3BlcHB5LWNyaXNwLWQ3YWJmYS5uZXRsaWZ5LmFwcC8ubmV0bGlmeS9pZGVudGl0eSIsInRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmxlSEFpT2pFMk56TXlORGMxT0RJc0luTjFZaUk2SWpBaWZRLmFCUW5iSHNHUUk2OWdTNG1ZNTAzY2VwSy1QeEZkWjZreUljaDlkLXBjWm8ifSwic2l0ZV91cmwiOiJodHRwczovL3BlcHB5LWNyaXNwLWQ3YWJmYS5uZXRsaWZ5LmFwcCJ9'
+    },
+    identity: {
+      url: 'https://peppy-crisp-d7abfa.netlify.app/.netlify/identity',
+      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzMyNDc1ODIsInN1YiI6IjAifQ.aBQnbHsGQI69gS4mY503cepK-PxFdZ6kyIch9d-pcZo'
+    }
+  },
+  identity: undefined,
+  invokedFunctionArn: 'arn:aws:lambda:us-east-1:242038277235:function:f21c1f50b925408a7906149070decceeb695bd6fd51aad10e318c646adcfaa1a',
+  awsRequestId: '739bbdee-04bd-42fb-b669-d1f88c33fc0d',
+  getRemainingTimeInMillis: [Function: getRemainingTimeInMillis]
+}
+#+end_src
+
+* Jan 9, 01:58:42 PM: 739bbdee INFO event
+** Jan 9, 01:58:42 PM: 739bbdee INFO
+#+begin_src typescript
+{
+  rawUrl: 'https://peppy-crisp-d7abfa.netlify.app/.netlify/functions/identity-signup',
+  rawQuery: '',
+  path: '/.netlify/functions/identity-signup',
+  httpMethod: 'POST',
+  headers: {
+    'X-Nf-Graph-Token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL25ldGxpZnkuY29tL2p3dC9jbGFpbXMiOnsic2l0ZV9pZCI6ImI0NzA3OTE1LTg5MTItNGUyMi04MzQ4LThiZWY2ZTk3YzVlOSIsImF1dGhsaWZ5X3Rva2VuX2lkIjoiMjE2YWNhZmQtYjAwNC00NGNjLTliMTEtM2EwOGQ4ODBjMDFkIn0sImV4cCI6MTY3MzI0ODQyMiwiaWF0IjoxNjczMjQ3NTIyLCJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCJ9.e96eX3Md6aFW_CtGPrjp9vwiqzCfOGadO7UhLDNvWRw',
+    'accept-encoding': 'gzip',
+    'content-length': '371',
+    'content-type': 'application/json',
+    host: 'peppy-crisp-d7abfa.netlify.app',
+    'user-agent': 'Go-http-client/2.0',
+    'x-country': 'US',
+    'x-forwarded-for': '34.66.219.47, 100.64.0.213',
+    'x-forwarded-proto': 'https',
+    'x-nf-client-connection-ip': '34.66.219.47',
+    'x-nf-request-id': '01GPAN5ZEXWZNXTXAQ9TPP98JM',
+    'x-webhook-signature': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMyNDc1MjIsImlzcyI6ImdvdHJ1ZSIsInN1YiI6IjVmMGMzN2NmLTgwYjAtNGY2Mi1hNzdjLWYyNDRmZTdkOGQ2NSIsInNoYTI1NiI6ImM1ZGZhNWM2MjRlMmJhZjRhZGE2Zjk2N2Q1Y2I0NzJmZTE1NzZlZTk1MTNkY2NmODc2YzdkODBhY2YxNTBhZjkifQ.1lfLv_TDUtR0o6ZlVe7xOaBJnAEDN631hIxG92j4z1Y'
+  },
+  multiValueHeaders: {
+    'Accept-Encoding': [ 'gzip' ],
+    'Content-Length': [ '371' ],
+    'Content-Type': [ 'application/json' ],
+    'User-Agent': [ 'Go-http-client/2.0' ],
+    'X-Country': [ 'US' ],
+    'X-Forwarded-For': [ '34.66.219.47, 100.64.0.213' ],
+    'X-Forwarded-Proto': [ 'https' ],
+    'X-Nf-Client-Connection-Ip': [ '34.66.219.47' ],
+    'X-Nf-Request-Id': [ '01GPAN5ZEXWZNXTXAQ9TPP98JM' ],
+    'X-Webhook-Signature': [
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzMyNDc1MjIsImlzcyI6ImdvdHJ1ZSIsInN1YiI6IjVmMGMzN2NmLTgwYjAtNGY2Mi1hNzdjLWYyNDRmZTdkOGQ2NSIsInNoYTI1NiI6ImM1ZGZhNWM2MjRlMmJhZjRhZGE2Zjk2N2Q1Y2I0NzJmZTE1NzZlZTk1MTNkY2NmODc2YzdkODBhY2YxNTBhZjkifQ.1lfLv_TDUtR0o6ZlVe7xOaBJnAEDN631hIxG92j4z1Y'
+    ],
+    host: [ 'peppy-crisp-d7abfa.netlify.app' ]
+  },
+  queryStringParameters: {},
+  multiValueQueryStringParameters: {},
+  body: '{"event":"signup","instance_id":"5f0c37cf-80b0-4f62-a77c-f244fe7d8d65","user":{"id":"ffc76d33-95fe-40e1-b85e-6d33b9f2f969","aud":"","role":"","email":"arifian.r@gmail.com","confirmation_sent_at":"2023-01-09T06:58:14Z","app_metadata":{"provider":"email"},"user_metadata":{"full_name":"arifianjuga"},"created_at":"2023-01-09T06:58:14Z","updated_at":"2023-01-09T06:58:14Z"}}',
+  isBase64Encoded: false,
+  netlifyGraphToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL25ldGxpZnkuY29tL2p3dC9jbGFpbXMiOnsic2l0ZV9pZCI6ImI0NzA3OTE1LTg5MTItNGUyMi04MzQ4LThiZWY2ZTk3YzVlOSIsImF1dGhsaWZ5X3Rva2VuX2lkIjoiMjE2YWNhZmQtYjAwNC00NGNjLTliMTEtM2EwOGQ4ODBjMDFkIn0sImV4cCI6MTY3MzI0ODQyMiwiaWF0IjoxNjczMjQ3NTIyLCJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMCJ9.e96eX3Md6aFW_CtGPrjp9vwiqzCfOGadO7UhLDNvWRw'
+}
+#+end_src
+* Jan 9, 01:58:42 PM: 739bbdee Duration: 6.74 ms	Memory Usage: 57 MB	Init Duration: 156.57 ms
