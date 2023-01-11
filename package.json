@@ -18,6 +18,6 @@
   },
   "scripts": {
     "dev" : "npx webpack serve",
-    "build": "npx webpack build"
+    "build": "npx webpack build --no-watch"
   }
 }
