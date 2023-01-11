@@ -90,6 +90,15 @@ btnSignup.addEventListener("click", createAccount)
 btnLogout.addEventListener("click", logout)
 
 const auth = getAuth(firebaseApp);
-connectAuthEmulator(auth, "http://localhost:9099");
+
+console.log("env is ");
+console.log(process.env.NODE_ENV);
+
+if (process.env.NODE_ENV === 'development') {
+  connectAuthEmulator(auth, "http://localhost:9099");
+}
+
+
+
 
 monitorAuthState();
