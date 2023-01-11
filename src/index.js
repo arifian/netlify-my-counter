@@ -91,10 +91,10 @@ btnLogout.addEventListener("click", logout)
 
 const auth = getAuth(firebaseApp);
 
-console.log("env is ");
-console.log(process.env.NODE_ENV);
+console.log("APP_ENV is ");
+console.log(process.env.APP_ENV);
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.APP_ENV === 'development') {
   connectAuthEmulator(auth, "http://localhost:9099");
 }
 
